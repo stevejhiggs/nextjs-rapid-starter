@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components -> Layout should match the snapshot 1`] = `
+<div>
+  <div
+    class="css-1ewyn93"
+  >
+    <header
+      class="css-cnq3i"
+    >
+      <nav
+        class="css-1hn0bm1"
+      >
+        <div
+          class="css-1c714fi"
+        >
+          <h1
+            class="chakra-heading css-0"
+            data-testid="page-heading-title"
+          >
+            Next.js starter
+          </h1>
+        </div>
+        <div
+          class="css-m9ssb"
+        >
+          <svg
+            fill="white"
+            viewBox="0 0 20 20"
+            width="12px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              Menu
+            </title>
+            <path
+              d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"
+            />
+          </svg>
+        </div>
+        <div
+          class="css-t2kg2r"
+        >
+          <p
+            class="chakra-text css-dtinqn"
+          >
+            Menu1
+          </p>
+          <p
+            class="chakra-text css-dtinqn"
+          >
+            Menu2
+          </p>
+          <p
+            class="chakra-text css-dtinqn"
+          >
+            Menu3
+          </p>
+        </div>
+        <div
+          class="css-mg6i13"
+        >
+          <button
+            class="chakra-button css-apt07k"
+            type="button"
+          >
+            Example Button
+          </button>
+        </div>
+      </nav>
+    </header>
+    <nav
+      class="css-1cipx4i"
+    >
+      <ul
+        class="css-0"
+      >
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/"
+          >
+            Home
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/about"
+          >
+            About
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/customComponents"
+          >
+            Custom components
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/serverRendered"
+          >
+            Server rendered
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/staticallyGenerated"
+          >
+            Statically generated
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/showRouter/blahblahMadeUpValue"
+          >
+            Dynamic route
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/i18n/staticPage"
+          >
+            i18n - Static
+          </a>
+        </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/i18n/serverRendered"
+          >
+            i18n - Server rendered
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main
+      class="css-xnw7p6"
+    />
+    <footer
+      class="css-htbxvr"
+    />
+  </div>
+</div>
+`;

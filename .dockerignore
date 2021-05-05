@@ -1,0 +1,8 @@
+coverage
+.artifacts
+.git
+.next
+.vscode
+node_modules
+Dockerfile
+out

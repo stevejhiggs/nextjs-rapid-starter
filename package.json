@@ -1,0 +1,101 @@
+{
+  "name": "nextjs-skeleton",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "start": "yarn dev",
+    "dev": "cross-env NODE_OPTIONS='--inspect' ./node_modules/.bin/next dev | pino-pretty",
+    "lint": "yarn prettier && yarn eslint",
+    "lint:ci": "yarn eslint:ci && yarn prettier:ci",
+    "prettier": "./node_modules/.bin/prettier --write '**/*.{js,jsx,ts,tsx,css,html,yaml,json,md}'",
+    "prettier:ci": "./node_modules/.bin/prettier --check '**/*.{js,jsx,ts,tsx,css,html,yaml,json,md}'",
+    "eslint": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
+    "eslint:ci": "eslint '**/*.{js,jsx,ts,tsx}'",
+    "test": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --watchAll",
+    "test:ci": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --ci --coverage",
+    "test:debug": "cross-env TZ=UTC node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch",
+    "test:updateSnapshots": "TZ=UTC jest --updateSnapshot",
+    "build": "cross-env NEXT_TELEMETRY_DISABLED=1 ./node_modules/.bin/next build",
+    "production": "./node_modules/.bin/next start",
+    "export": "./node_modules/.bin/next export",
+    "analyze": "cross-env ANALYZE=true next build",
+    "security:licenses": "license-checker --production --summary --failOn GPL",
+    "security:packages": "audit-ci --report-type=full --critical=true"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.0",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@next/bundle-analyzer": "^10.2.0",
+    "@zeit/next-source-maps": "^0.0.3",
+    "formik": "^2.2.6",
+    "framer-motion": "^4",
+    "isomorphic-unfetch": "^3.1.0",
+    "next": "10.2.0",
+    "next-absolute-url": "^1.2.2",
+    "next-connect": "^0.10.1",
+    "next-i18next": "8.2.0",
+    "pino": "^6.11.3",
+    "pino-http": "^5.5.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.6",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.2",
+    "@types/pino": "^6.3.8",
+    "@types/pino-http": "^5.4.1",
+    "@types/react": "^17.0.5",
+    "@types/supertest": "^2.0.11",
+    "@typescript-eslint/eslint-plugin": "4.22.1",
+    "@typescript-eslint/parser": "4.22.1",
+    "audit-ci": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "eslint": "^7.25.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^4.2.0",
+    "eslint-plugin-unicorn": "^31.0.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
+    "husky": "4.x",
+    "jest": "^26.6.3",
+    "license-checker": "^25.0.1",
+    "lint-staged": "^10.5.4",
+    "msw": "^0.28.2",
+    "pino-pretty": "^4.7.1",
+    "prettier": "^2.2.1",
+    "supertest": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "prettier": {
+    "printWidth": 150,
+    "trailingComma": "none",
+    "singleQuote": true
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix"
+    ],
+    "**/*.{js,jsx,ts,tsx,css,html,yaml,json,md}": [
+      "prettier --write"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "[html]": {
+    "editor.semanticHighlighting.enabled": true
+  }
+}

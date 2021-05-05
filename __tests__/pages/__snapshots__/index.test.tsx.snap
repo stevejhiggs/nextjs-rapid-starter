@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pages -> / should match the snapshot 1`] = `
+<div>
+  <h2
+    class="chakra-heading css-0"
+  >
+    Homepage
+  </h2>
+  <p>
+    I am some nice paragraph content
+  </p>
+  <h2
+    class="chakra-heading css-0"
+  >
+    Assets
+  </h2>
+  <p>
+    Assets such as images can just be added to the /public directory
+  </p>
+  <img
+    alt="spider"
+    src="/images/Peacock_Spider.jpg"
+  />
+</div>
+`;

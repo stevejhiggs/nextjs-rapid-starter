@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components -> Nav should match the snapshot 1`] = `
+<div>
+  <ul
+    class="css-0"
+  >
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/about"
+      >
+        About
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/customComponents"
+      >
+        Custom components
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/serverRendered"
+      >
+        Server rendered
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/staticallyGenerated"
+      >
+        Statically generated
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/showRouter/blahblahMadeUpValue"
+      >
+        Dynamic route
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/i18n/staticPage"
+      >
+        i18n - Static
+      </a>
+    </li>
+    <li
+      class="css-pmguu6"
+    >
+      <a
+        class="chakra-link css-0"
+        href="/i18n/serverRendered"
+      >
+        i18n - Server rendered
+      </a>
+    </li>
+  </ul>
+</div>
+`;

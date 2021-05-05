@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Components -> Counter should match the snapshot 1`] = `
+<div>
+  <div
+    class="css-8fkoyy"
+  >
+    <p
+      data-testid="message"
+    >
+      You clicked 
+      0
+       times
+    </p>
+    <button
+      class="chakra-button css-oqfhsh"
+      data-testid="increment"
+      type="button"
+    >
+      Increment counter
+    </button>
+  </div>
+</div>
+`;
