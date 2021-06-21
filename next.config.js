@@ -7,9 +7,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 
 module.exports = withSourceMaps(
   withBundleAnalyzer({
-    future: {
-      webpack5: true
-    },
     i18n,
     poweredByHeader: false,
     publicRuntimeConfig: {

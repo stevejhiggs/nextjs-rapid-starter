@@ -20,21 +20,23 @@
     "export": "./node_modules/.bin/next export",
     "analyze": "cross-env ANALYZE=true next build",
     "security:licenses": "license-checker --production --summary --failOn GPL",
-    "security:packages": "audit-ci --report-type=full --critical=true"
+    "security:packages": "audit-ci --report-type=full --critical=true",
+    "prepare": "husky install && rm -rf .git/hooks && ln -s ../.husky .git/hooks",
+    "pre-commit": "yarn lint-staged"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.0",
+    "@chakra-ui/react": "^1.6.4",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@next/bundle-analyzer": "^10.2.0",
+    "@next/bundle-analyzer": "^11.0.0",
     "@zeit/next-source-maps": "^0.0.3",
-    "formik": "^2.2.6",
+    "formik": "^2.2.9",
     "framer-motion": "^4",
     "isomorphic-unfetch": "^3.1.0",
-    "next": "10.2.0",
+    "next": "11.0.0",
     "next-absolute-url": "^1.2.2",
     "next-connect": "^0.10.1",
-    "next-i18next": "8.2.0",
+    "next-i18next": "8.5.1",
     "pino": "^6.11.3",
     "pino-http": "^5.5.0",
     "react": "17.0.2",
@@ -42,40 +44,40 @@
     "yup": "^0.32.9"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.0.2",
+    "@types/node": "^15.12.4",
     "@types/pino": "^6.3.8",
     "@types/pino-http": "^5.4.1",
-    "@types/react": "^17.0.5",
+    "@types/react": "^17.0.11",
     "@types/supertest": "^2.0.11",
-    "@typescript-eslint/eslint-plugin": "4.22.1",
-    "@typescript-eslint/parser": "4.22.1",
-    "audit-ci": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "4.27.0",
+    "@typescript-eslint/parser": "4.27.0",
+    "audit-ci": "^4.1.0",
     "cross-env": "^7.0.3",
-    "eslint": "^7.25.0",
+    "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.23.4",
     "eslint-plugin-jest": "^24.3.6",
     "eslint-plugin-jsx-a11y": "^6.4.1",
     "eslint-plugin-prettier": "^3.4.0",
-    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "eslint-plugin-testing-library": "^4.2.0",
-    "eslint-plugin-unicorn": "^31.0.0",
+    "eslint-plugin-testing-library": "^4.6.0",
+    "eslint-plugin-unicorn": "^33.0.1",
     "eslint-plugin-unused-imports": "^1.1.1",
-    "husky": "4.x",
-    "jest": "^26.6.3",
+    "husky": "^6.0.0",
+    "jest": "^27.0.4",
     "license-checker": "^25.0.1",
-    "lint-staged": "^10.5.4",
-    "msw": "^0.28.2",
-    "pino-pretty": "^4.7.1",
-    "prettier": "^2.2.1",
+    "lint-staged": "^11.0.0",
+    "msw": "^0.29.0",
+    "pino-pretty": "^5.0.2",
+    "prettier": "^2.3.1",
     "supertest": "^6.1.3",
-    "typescript": "^4.2.4"
+    "typescript": "^4.3.4"
   },
   "prettier": {
     "printWidth": 150,
@@ -89,11 +91,6 @@
     "**/*.{js,jsx,ts,tsx,css,html,yaml,json,md}": [
       "prettier --write"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "[html]": {
     "editor.semanticHighlighting.enabled": true
