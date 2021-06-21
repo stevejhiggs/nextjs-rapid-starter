@@ -1,7 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
+
+import SpiderImage from '../public/images/Peacock_Spider.jpg';
 
 const Page: NextPage = () => {
   return (
@@ -19,7 +22,7 @@ const Page: NextPage = () => {
 
       <p>Assets such as images can just be added to the /public directory</p>
 
-      <img alt="spider" src="/images/Peacock_Spider.jpg" />
+      <Image src={SpiderImage} alt="spider" />
     </>
   );
 };
