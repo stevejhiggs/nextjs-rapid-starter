@@ -55,7 +55,7 @@ exports[`Components -> Header should match the snapshot 1`] = `
       class="css-mg6i13"
     >
       <button
-        class="chakra-button css-apt07k"
+        class="chakra-button css-ktwkag"
         type="button"
       >
         Example Button
