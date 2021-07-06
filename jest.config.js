@@ -16,16 +16,15 @@ module.exports = {
   testEnvironment: 'jest-environment-jsdom',
   transform: {
     '^.+\\.(js|jsx|ts|tsx)$': '<rootDir>/node_modules/babel-jest',
-    '^.+\\.css$': '<rootDir>/__tests__/config/cssTransform.js'
+    '^.+\\.css$': '<rootDir>/__tests__/config/cssTransformer.js',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/__tests__/config/fileTransformer.js'
   },
   transformIgnorePatterns: ['/node_modules/', '^.+\\.module\\.(css|sass|scss)$'],
-  moduleNameMapper: {
-    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy'
-  },
   moduleNameMapper: {
     'src/(.*)': '<rootDir>/src/$1',
     'pages/(.*)': '<rootDir>/pages/$1',
     '__tests__/(.*)': '<rootDir>/__tests__/$1',
-    '\\.(css|less)$': '<rootDir>/__mocks__/styleMock.js'
+    '^.+\\.module\\.(css|sass|scss)$': 'identity-obj-proxy',
+    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/__tests__/config/fileMock.js'
   }
 };
