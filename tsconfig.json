@@ -21,7 +21,8 @@
       "@pages/*": ["pages/*"],
       "@src/*": ["src/*"],
       "@__tests__/*": ["__tests__/*"]
-    }
+    },
+    "incremental": true
   },
   "exclude": ["node_modules", ".next"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]

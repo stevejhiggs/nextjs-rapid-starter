@@ -1,16 +1,16 @@
-import pino, { Logger, LoggerOptions } from 'pino';
+import pino from 'pino';
 import getConfig from 'next/config';
 
 // Only holds serverRuntimeConfig and publicRuntimeConfig
 const { publicRuntimeConfig } = getConfig();
 
-let logger: Logger;
+let logger: pino.Logger;
 
-export const pinoConfig: LoggerOptions = {
+export const pinoConfig: pino.LoggerOptions = {
   level: publicRuntimeConfig?.logLevel || process.env['NEXT_PUBLIC_LOGS_LEVEL'] || 'info'
 };
 
-export default function getLogger(): Logger {
+export default function getLogger(): pino.Logger {
   if (!logger) {
     logger = pino(pinoConfig);
   }

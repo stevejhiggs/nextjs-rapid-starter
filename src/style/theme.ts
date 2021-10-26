@@ -3,7 +3,7 @@ import { Theme } from '@chakra-ui/theme';
 
 const fonts = { mono: `'Menlo', monospace` };
 
-const theme: Theme = extendTheme(
+const theme: Partial<Theme> = extendTheme(
   withDefaultColorScheme({
     colorScheme: 'blue'
   }),

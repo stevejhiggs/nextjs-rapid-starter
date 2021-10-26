@@ -1,9 +1,9 @@
-import pino, { Logger } from 'pino';
+import pino from 'pino';
 import { pinoConfig } from './serverLogger';
 
-let logger: Logger;
+let logger: pino.Logger;
 
-export default function getLogger(): Logger {
+export default function getLogger(): pino.Logger {
   if (!logger) {
     logger = pino({
       ...pinoConfig,
