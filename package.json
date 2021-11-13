@@ -14,14 +14,13 @@
     "test": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --watchAll",
     "test:ci": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --ci --coverage",
     "test:debug": "cross-env TZ=UTC node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch",
-    "test:updateSnapshots": "TZ=UTC jest --updateSnapshot",
     "build": "cross-env NEXT_TELEMETRY_DISABLED=1 ./node_modules/.bin/next build",
     "production": "./node_modules/.bin/next start",
     "export": "./node_modules/.bin/next export",
     "analyze": "cross-env ANALYZE=true next build",
     "security:licenses": "license-checker --production --summary --failOn GPL",
     "security:packages": "audit-ci --report-type=full --critical=true",
-    "prepare": "husky install && rm -rf .git/hooks && ln -s ../.husky .git/hooks",
+    "prepare": "husky install",
     "pre-commit": "yarn lint-staged"
   },
   "dependencies": {
