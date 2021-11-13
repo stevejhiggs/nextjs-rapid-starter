@@ -12,7 +12,7 @@
     "eslint": "eslint '**/*.{js,jsx,ts,tsx}' --fix",
     "eslint:ci": "eslint '**/*.{js,jsx,ts,tsx}'",
     "test": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --watchAll",
-    "test:ci": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --ci --coverage",
+    "test:ci": "cross-env TZ=UTC NEXT_PUBLIC_LOGS_LEVEL=warn jest --ci --coverage --forceExit",
     "test:debug": "cross-env TZ=UTC node --inspect-brk node_modules/jest/bin/jest.js --runInBand --watch",
     "test:updateSnapshots": "TZ=UTC jest --updateSnapshot",
     "build": "cross-env NEXT_TELEMETRY_DISABLED=1 ./node_modules/.bin/next build",
