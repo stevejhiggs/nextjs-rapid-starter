@@ -6,4 +6,4 @@ It is important to note that next.js will try to create routes to every file in 
 
 ## Next-connect
 
-The endpoints in this project have been further enhanced via the use of [next-connect](https://www.npmjs.com/package/next-connect) which adds a simply api and middleware support.
+The endpoints in this project have been further enhanced via the use of [next-connect](https://www.npmjs.com/package/next-connect) which adds connect style commands and middleware support.
