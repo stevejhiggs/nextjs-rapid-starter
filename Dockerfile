@@ -1,5 +1,5 @@
 
-FROM node:14-alpine AS build-env
+FROM node:16-alpine AS build-env
 
 # Deal with packages up front to allow us to use docker layers efficiently
 WORKDIR /opt/app
@@ -12,7 +12,7 @@ RUN yarn build
 RUN rm -rf ./node_modules && yarn --pure-lockfile --production
 
 # re-start from a blank alpine image
-FROM node:14-alpine
+FROM node:16-alpine
 WORKDIR /opt/app
 # copy the build artifacts
 COPY --from=build-env /opt/app .
