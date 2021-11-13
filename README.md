@@ -40,7 +40,7 @@ Contains a skeleton for rapidly standing up sites in a docker container running 
 
   - out of the box security headers. E.g csp
   - license check on Pull Request
-  - checks for critical security issues on Pull Request.
+  - checks for critical security issues on Pull Request
 
 - [logging](docs/logging.md)
 
