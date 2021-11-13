@@ -3,8 +3,8 @@
 
 // used for __tests__/testing-library.js
 // learn more: https://github.com/testing-library/jest-dom
-import '@testing-library/jest-dom/extend-expect';
-import { setConfig } from 'next/config';
-import config from '../../next.config';
+require('@testing-library/jest-dom/extend-expect');
+const nextConfig = require('next/config');
+const config = require('../../next.config');
 
-setConfig(config.publicRuntimeConfig);
+nextConfig.setConfig(config.publicRuntimeConfig);
