@@ -21,7 +21,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "security:licenses": "license-checker --production --summary --failOn GPL",
     "security:packages": "audit-ci --report-type=full --critical=true",
-    "prepare": "husky install && rm -rf .git/hooks && ln -s ../.husky .git/hooks",
+    "prepare": "husky install",
     "pre-commit": "yarn lint-staged"
   },
   "dependencies": {
