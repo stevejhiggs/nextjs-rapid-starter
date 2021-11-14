@@ -39,6 +39,10 @@ const navUrls: NavElement[] = [
   {
     url: '/i18n/serverRendered',
     text: 'i18n - Server rendered'
+  },
+  {
+    url: '/getStaticPaths/blogArticleA',
+    text: 'GetStaticPaths'
   }
 ];
 

@@ -155,6 +155,16 @@ exports[`Components -> Layout should match the snapshot 1`] = `
             i18n - Server rendered
           </a>
         </li>
+        <li
+          class="css-pmguu6"
+        >
+          <a
+            class="chakra-link css-0"
+            href="/getStaticPaths/blogArticleA"
+          >
+            GetStaticPaths
+          </a>
+        </li>
       </ul>
     </nav>
     <main
