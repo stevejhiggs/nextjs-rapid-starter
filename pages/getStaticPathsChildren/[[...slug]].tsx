@@ -31,8 +31,7 @@ const Page: NextPage<PageProperties> = ({ title, buildTime }) => {
       <p>I am a dynamically created page built at {buildTime}</p>
       <p>
         This is an example of a page that uses GetStaticPaths to generate multiple pages. One difference between this and the generic GetStaticPaths
-        example is that by using the dynamic page identifier \[\[...slug\]\] and a slug array we can generate children of children. Generated pages
-        are:
+        example is that by using the dynamic page identifier [[...slug]] and a slug array we can generate children of children. Generated pages are:
       </p>
       <ul>{mapLinkCollection(pageMapping)}</ul>
     </>
