@@ -43,6 +43,10 @@ const navUrls: NavElement[] = [
   {
     url: '/getStaticPaths/blogArticleA',
     text: 'GetStaticPaths'
+  },
+  {
+    url: '/getStaticPathsChildren/blog/articles/A',
+    text: 'GetStaticPaths - Nested'
   }
 ];
 

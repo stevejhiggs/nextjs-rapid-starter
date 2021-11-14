@@ -6,16 +6,17 @@ import Link from 'next/link';
 
 interface PageProperties {
   id: string;
+  slug: string[];
   title: string;
   buildTime?: string;
   locale?: string;
 }
 
 const pageMapping: PageProperties[] = [
-  { id: 'blogArticleA', title: 'Blog Article A', locale: 'en' },
-  { id: 'blogArticleB', title: 'Blog Article B', locale: 'pl' },
-  { id: 'blogArticleC', title: 'Blog Article C in English', locale: 'en' },
-  { id: 'blogArticleC', title: 'Blog Article C in Polish', locale: 'pl' }
+  { id: 'blogArticleD', slug: ['blog', 'articles', 'A'], title: 'Blog Article A', locale: 'en' },
+  { id: 'blogArticleE', slug: ['blog', 'articles', 'B'], title: 'Blog Article B', locale: 'pl' },
+  { id: 'blogArticleF', slug: ['blog', 'articles', 'C'], title: 'Blog Article C in English', locale: 'en' },
+  { id: 'blogArticleF', slug: ['blog', 'articles', 'C'], title: 'Blog Article C in Polish', locale: 'pl' }
 ];
 
 const Page: NextPage<PageProperties> = ({ title, buildTime }) => {
@@ -28,7 +29,11 @@ const Page: NextPage<PageProperties> = ({ title, buildTime }) => {
 
       <Heading as="h2">{title}</Heading>
       <p>I am a dynamically created page built at {buildTime}</p>
-      <p>This is an example of a page that uses GetStaticPaths to generate multiple pages. Generated pages are:</p>
+      <p>
+        This is an example of a page that uses GetStaticPaths to generate multiple pages. One difference between this and the generic GetStaticPaths
+        example is that by using the dynamic page identifier \[\[...slug\]\] and a slug array we can generate children of children. Generated pages
+        are:
+      </p>
       <ul>{mapLinkCollection(pageMapping)}</ul>
     </>
   );
@@ -37,7 +42,7 @@ const Page: NextPage<PageProperties> = ({ title, buildTime }) => {
 function mapLinkCollection(pages: PageProperties[]) {
   return pages.map((page) => (
     <li key={`${page.locale}_${page.id}`}>
-      <Link href={`/getStaticPaths/${page.id}`} locale={page.locale}>
+      <Link href={`/getStaticPathsChildren/${page.slug.join('/')}`} locale={page.locale}>
         {page.title}
       </Link>
     </li>
@@ -46,7 +51,7 @@ function mapLinkCollection(pages: PageProperties[]) {
 
 export const getStaticProps: GetStaticProps<PageProperties> = async ({ params, locale }) => {
   // code in here runs at build time
-  const pageInfo = pageMapping.find((x) => x.id === params.id && x.locale === locale);
+  const pageInfo = pageMapping.find((x) => x.slug.join('/') === (params.slug as string[]).join('/') && x.locale === locale);
 
   if (!pageInfo) {
     return {
@@ -74,7 +79,7 @@ export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
 
   // Get the paths we want to pre-render based on posts
   for (const post of posts) {
-    paths.push({ params: { id: post.id }, locale: post.locale });
+    paths.push({ params: { slug: post.slug }, locale: post.locale });
   }
 
   // We'll pre-render only these paths at build time.
