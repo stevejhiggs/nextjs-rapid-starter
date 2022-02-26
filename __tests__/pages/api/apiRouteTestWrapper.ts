@@ -1,7 +1,7 @@
 import { ServerResponse, IncomingMessage } from 'http';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { NextConnect } from 'next-connect';
-import { apiResolver } from 'next/dist/server/api-utils';
+import { apiResolver } from 'next/dist/server/api-utils/node';
 
 // mock for `apiResolver`'s 5th parameter to please TS
 const apiPreviewPropertiesMock = {
