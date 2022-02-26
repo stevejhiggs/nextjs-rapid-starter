@@ -1,13 +1,5 @@
 module.exports = {
   ignorePatterns: ['node_modules', 'public/**/*'],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2021,
-    sourceType: 'module',
-    ecmaFeatures: {
-      jsx: true
-    }
-  },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -15,7 +7,8 @@ module.exports = {
     'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'plugin:jsx-a11y/recommended'
+    'plugin:jsx-a11y/recommended',
+    'plugin:@next/next/recommended'
   ],
   plugins: ['@typescript-eslint', 'react', 'unused-imports', 'unicorn', 'jsx-a11y'],
   rules: {
