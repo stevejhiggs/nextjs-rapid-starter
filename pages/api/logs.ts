@@ -1,4 +1,4 @@
-import apiHandler from '@src/api/routeHandler';
+import apiHandler from '@/src/api/routeHandler';
 
 const handler = apiHandler().post(async (request, response) => {
   try {

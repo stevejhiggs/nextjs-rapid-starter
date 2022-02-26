@@ -1,6 +1,6 @@
 import { Box, Button } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import fetch from '@src/api/nextFetch';
+import fetch from '@/src/api/nextFetch';
 
 // An example of calling the backend api
 const CallApi: React.FC = () => {

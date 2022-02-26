@@ -1,4 +1,4 @@
-import apiHandler from '@src/api/routeHandler';
+import apiHandler from '@/src/api/routeHandler';
 
 const environment = process.env['NEXT_PUBLIC_ENVIRONMENT'] || 'local';
 

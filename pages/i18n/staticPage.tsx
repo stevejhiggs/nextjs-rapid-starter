@@ -5,7 +5,7 @@ import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Link from 'next/link';
-import Localised from '@src/Localised';
+import Localised from '@/src/Localised';
 
 const Page: NextPage = () => {
   const { t } = useTranslation('localePage');

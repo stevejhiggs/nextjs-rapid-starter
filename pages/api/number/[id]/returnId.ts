@@ -1,4 +1,4 @@
-import apiHandler from '@src/api/routeHandler';
+import apiHandler from '@/src/api/routeHandler';
 
 // /api/number/[id]/returnId
 const handler = apiHandler().get(async (request, response) => {

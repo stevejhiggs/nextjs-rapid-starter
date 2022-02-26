@@ -1,6 +1,6 @@
 import React from 'react';
-import Index from '@pages/index';
 import { cleanup, render, screen } from '@testing-library/react';
+import Index from '@/pages/index';
 
 afterEach(cleanup);
 

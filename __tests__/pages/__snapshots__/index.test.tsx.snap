@@ -20,7 +20,7 @@ exports[`Pages -> / should match the snapshot 1`] = `
   </p>
   <img
     alt="spider"
-    src="fileMock"
+    src="test-file-stub"
   />
 </div>
 `;

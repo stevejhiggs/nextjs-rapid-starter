@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import nc, { NextConnect } from 'next-connect';
 import pinoHttp from 'pino-http';
-import { pinoConfig } from '@src/logger/serverLogger';
+import { pinoConfig } from '@/src/logger/serverLogger';
 
 const logger = pinoHttp(pinoConfig);
 

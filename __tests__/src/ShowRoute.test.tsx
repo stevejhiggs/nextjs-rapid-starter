@@ -1,7 +1,7 @@
 import React from 'react';
-import ShowRoute from '@src/ShowRoute';
 import { cleanup, render, screen } from '@testing-library/react';
-import mockUseRouter from '@__tests__/mockUseRouter';
+import ShowRoute from '@/src/ShowRoute';
+import mockUseRouter from '@/__tests__/mockUseRouter';
 
 afterEach(() => {
   cleanup();

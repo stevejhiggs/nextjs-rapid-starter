@@ -1,7 +1,7 @@
 import http from 'http';
 import request from 'supertest';
-import handler from '@pages/api/number/[id]/returnId';
 import wrapApiRouteForTest from '../../apiRouteTestWrapper';
+import handler from '@/pages/api/number/[id]/returnId';
 
 describe('api -> /api/number/[id]/returnId endpoint', () => {
   it('returns a 200 and the expected body on get', async () => {

@@ -18,9 +18,9 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@pages/*": ["pages/*"],
-      "@src/*": ["src/*"],
-      "@__tests__/*": ["__tests__/*"]
+      "@/pages/*": ["pages/*"],
+      "@/src/*": ["src/*"],
+      "@/__tests__/*": ["__tests__/*"]
     },
     "incremental": true
   },

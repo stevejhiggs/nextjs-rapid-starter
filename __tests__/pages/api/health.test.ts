@@ -1,7 +1,7 @@
 import http from 'http';
 import request from 'supertest';
-import health from '@pages/api/health';
 import wrapApiRouteForTest from './apiRouteTestWrapper';
+import health from '@/pages/api/health';
 
 describe('api -> /api/health endpoint', () => {
   it('returns a 200 and the expected body on get', async () => {
