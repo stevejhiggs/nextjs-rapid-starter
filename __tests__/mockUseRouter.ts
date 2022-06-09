@@ -1,7 +1,7 @@
-import * as nextRouter from 'next/router';
+import nextRouter from 'next/router';
 import { NextRouter } from 'next/router';
 
-type MockUseRouterParameters = Partial<nextRouter.NextRouter>;
+type MockUseRouterParameters = Partial<NextRouter>;
 
 // allow simple mocking of the router, see __tests__/components/ShowRoute.test.tsx for a usage example
 
@@ -40,6 +40,8 @@ export const getFakeRouter = ({
     locale,
     locales,
     defaultLocale,
+    isLocaleDomain: false,
+    isPreview: false,
     isReady: true,
     isFallback: false,
     ...actions
