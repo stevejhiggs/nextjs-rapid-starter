@@ -3,7 +3,8 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'react-app',
+    'plugin:import/recommended',
+    'plugin:import/typescript',
     'plugin:unicorn/recommended',
     'plugin:prettier/recommended',
     'prettier',
@@ -51,5 +52,11 @@ module.exports = {
     'unicorn/no-useless-undefined': 'off',
     'unicorn/consistent-destructuring': 'off',
     'unicorn/prefer-dom-node-remove': 'off'
+  },
+  settings: {
+    'import/extensions': ['.js', '.jsx', '.tsx', '.ts'],
+    'import/resolver': {
+      typescript: {}
+    }
   }
 };
