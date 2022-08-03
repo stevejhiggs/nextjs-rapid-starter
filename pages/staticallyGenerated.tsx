@@ -34,7 +34,7 @@ const Page: NextPage<PageProperties> = (properties) => {
   );
 };
 
-export const getStaticProps: GetStaticProps<PageProperties> = async (context) => {
+export const getStaticProps: GetStaticProps<PageProperties> = async () => {
   // code in here runs at build time
 
   return {

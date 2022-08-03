@@ -32,7 +32,7 @@ const Page: NextPage<PageProperties> = (properties) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps<PageProperties> = async (context) => {
+export const getServerSideProps: GetServerSideProps<PageProperties> = async () => {
   // code in here is guarenteed to run server side
 
   return {

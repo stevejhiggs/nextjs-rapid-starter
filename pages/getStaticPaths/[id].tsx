@@ -66,7 +66,7 @@ export const getStaticProps: GetStaticProps<PageProperties> = async ({ params, l
   };
 };
 
-export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
+export const getStaticPaths: GetStaticPaths = async () => {
   const paths: { params: any; locale: string }[] = [];
 
   // this could be an api call at this point

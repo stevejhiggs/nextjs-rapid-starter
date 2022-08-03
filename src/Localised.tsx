@@ -1,7 +1,7 @@
 import { useTranslation } from 'next-i18next';
 import { Heading } from '@chakra-ui/react';
 
-export const Localised: React.FC = () => {
+const Localised: React.FC = () => {
   const { t } = useTranslation('common');
 
   return (

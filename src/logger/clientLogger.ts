@@ -1,4 +1,4 @@
-import pino from 'pino';
+import { pino } from 'pino';
 import { pinoConfig } from './serverLogger';
 
 let logger: pino.Logger;

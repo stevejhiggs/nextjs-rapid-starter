@@ -1,4 +1,4 @@
-import pino from 'pino';
+import { pino } from 'pino';
 import getConfig from 'next/config';
 
 // Only holds serverRuntimeConfig and publicRuntimeConfig
