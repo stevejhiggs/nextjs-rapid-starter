@@ -5,7 +5,11 @@ import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
 
-const Layout: React.FC = ({ children }) => {
+interface Properties {
+  children: React.ReactNode;
+}
+
+const Layout: React.FC<Properties> = ({ children }) => {
   return (
     <Grid templateColumns="200px 1fr" templateRows="auto 1fr auto" gap="10px" height="100vh">
       <GridItem as="header" gridArea="1 / 1 / 2 / 6">

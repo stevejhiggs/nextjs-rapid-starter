@@ -1,7 +1,11 @@
 import { Box, Button, Flex, Heading, Text } from '@chakra-ui/react';
 import { useState } from 'react';
 
-const MenuItems: React.FC = ({ children }) => (
+interface Properties {
+  children: React.ReactNode;
+}
+
+const MenuItems: React.FC<Properties> = ({ children }) => (
   <Text mt={{ base: 4, md: 0 }} mr={6} display="block">
     {children}
   </Text>
