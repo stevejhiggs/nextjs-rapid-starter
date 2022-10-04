@@ -1,4 +1,5 @@
 {
-  "sharedText": "Jakiś wspólny tekst",
-  "componentTest": "Jestem komponentem zlokalizowanym"
+    "sharedText": "",
+    "componentTest": "",
+    "someOtherTxt": "bleugh but in polish"
 }
