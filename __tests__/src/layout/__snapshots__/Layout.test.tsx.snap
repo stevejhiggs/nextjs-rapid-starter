@@ -6,7 +6,7 @@ exports[`Components -> Layout should match the snapshot 1`] = `
     class="css-1ewyn93"
   >
     <header
-      class="css-cnq3i"
+      class="css-1p4uj4t"
     >
       <nav
         class="css-1hn0bm1"
@@ -70,7 +70,7 @@ exports[`Components -> Layout should match the snapshot 1`] = `
       </nav>
     </header>
     <nav
-      class="css-1cipx4i"
+      class="css-19je435"
     >
       <ul
         class="css-0"
@@ -178,10 +178,10 @@ exports[`Components -> Layout should match the snapshot 1`] = `
       </ul>
     </nav>
     <main
-      class="css-xnw7p6"
+      class="css-92di6r"
     />
     <footer
-      class="css-htbxvr"
+      class="css-12zq1je"
     />
   </div>
 </div>
