@@ -1,5 +1,5 @@
 {
-    "sharedText": "Some common text",
-    "componentTest": "I am a localised component",
-    "someOtherTxt": "bleugh2"
+  "sharedText": "Some common text",
+  "componentTest": "I am a localised component",
+  "someOtherTxt": "what happens if the base text changes?"
 }
