@@ -3,7 +3,7 @@ import { Heading } from '@chakra-ui/react';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 
-interface PageProperties {
+export interface PageProperties {
   productList: string[];
 }
 
@@ -23,7 +23,7 @@ const Page: NextPage<PageProperties> = (properties) => {
       </p>
 
       <Heading as="h3">Server data</Heading>
-      <ul>
+      <ul data-testid="server-data">
         {properties.productList.map((product) => (
           <li key={product}>{product}</li>
         ))}

@@ -37,18 +37,7 @@ module.exports = {
     'unused-imports/no-unused-imports-ts': 'error',
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/filename-case': 'off',
-    'unicorn/prevent-abbreviations': [
-      'error',
-      {
-        checkFilenames: false,
-        allowList: {
-          getInitialProps: true,
-          getServerSideProps: true,
-          getStaticProps: true,
-          props: true
-        }
-      }
-    ],
+    'unicorn/prevent-abbreviations': 'off',
     'unicorn/no-useless-undefined': 'off',
     'unicorn/consistent-destructuring': 'off',
     'unicorn/prefer-dom-node-remove': 'off'
