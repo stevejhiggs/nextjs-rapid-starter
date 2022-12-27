@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Box, Link as ChakraLink } from '@chakra-ui/react';
+import { Box } from '@chakra-ui/react';
 
 interface NavElement {
   url: string;
@@ -54,7 +54,7 @@ function mapLinkCollection(links: NavElement[]) {
   return links.map((navElement) => (
     <Box as="li" key={navElement.url} paddingBottom="0.5rem" paddingLeft="0.5rem">
       <Link href={navElement.url} passHref>
-        <ChakraLink>{navElement.text}</ChakraLink>
+        {navElement.text}
       </Link>
     </Box>
   ));
