@@ -80,7 +80,7 @@ Contains a skeleton for rapidly standing up sites in a docker container running 
 
 ### Requirements
 
-- [Node.js 12.x or higher](https://nodejs.org/en/)
+- [Node.js 16.x or higher](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/en/)
 
 ### Recommended tools
@@ -106,16 +106,16 @@ You can then run the app by:
 ## Available commands
 
 - `yarn start` - start the app running locally in dev mode
-- `yarn test` - run the tests in watch mode
+- `yarn test` - run the tests
+- `yarn test:watch` - run the tests in watch mode
 - `yarn test:ci` - run the tests for ci/cd + generate a coverage report
-- `yarn test:updateSnapshots` - update the generated files used for snapshot testing
 - `yarn lint` - lint the codebase, applying fixes where possible
 - `yarn lint:ci` - lint the codebase, erroring out if code does not meet requirements
 - `yarn analyze` - show what takes up the space in the bundle
 - `yarn security:licenses` - show what licenses are in use, failing on GPL
 - `yarn security:packages` - show any security issues with packages, failing on critical issues
 - `yarn build` - build the app ready for production
-- `yarn production` - run the built package
+- `yarn start:production` - run the built package
 
 ## How do I get started making changes?
 
