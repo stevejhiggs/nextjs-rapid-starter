@@ -1,5 +1,4 @@
-import nextRouter from 'next/router';
-import { NextRouter } from 'next/router';
+import nextRouter, { NextRouter } from 'next/router';
 
 type MockUseRouterParameters = Partial<NextRouter>;
 
@@ -22,7 +21,7 @@ export const getFakeRouter = ({
     replace: jest.fn().mockResolvedValue(true),
     reload: jest.fn(),
     back: jest.fn(),
-    prefetch: jest.fn().mockResolvedValue(),
+    prefetch: jest.fn().mockResolvedValue(false),
     beforePopState: jest.fn(),
     events: {
       on: jest.fn(),
@@ -76,7 +75,7 @@ const mockUseRouter = ({
     defaultLocale
   });
 
-  (nextRouter.useRouter as jest.Mock) = jest.fn(() => router);
+  ((nextRouter as any).useRouter as jest.Mock) = jest.fn(() => router);
 
   return actions;
 };
