@@ -21,6 +21,7 @@ export const getFakeRouter = ({
     replace: jest.fn().mockResolvedValue(true),
     reload: jest.fn(),
     back: jest.fn(),
+    forward: jest.fn(),
     prefetch: jest.fn().mockResolvedValue(false),
     beforePopState: jest.fn(),
     events: {
