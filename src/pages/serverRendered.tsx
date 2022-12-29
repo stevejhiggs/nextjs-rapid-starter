@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 
@@ -15,14 +14,14 @@ const Page: NextPage<PageProperties> = (properties) => {
         <meta name="description" content="A page containing data retreived from the server" />
       </Head>
 
-      <Heading as="h2">Server rendered page</Heading>
+      <h2>Server rendered page</h2>
 
       <p>
         This page uses https://nextjs.org/docs/basic-features/data-fetching#getserversideprops-server-side-rendering to always have a set of page
         properties that render server side
       </p>
 
-      <Heading as="h3">Server data</Heading>
+      <h3>Server data</h3>
       <ul data-testid="server-data">
         {properties.productList.map((product) => (
           <li key={product}>{product}</li>

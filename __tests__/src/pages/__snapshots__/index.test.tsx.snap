@@ -2,17 +2,13 @@
 
 exports[`Pages -> / should match the snapshot 1`] = `
 <div>
-  <h2
-    class="chakra-heading css-0"
-  >
+  <h2>
     Homepage
   </h2>
   <p>
     I am some nice paragraph content
   </p>
-  <h2
-    class="chakra-heading css-0"
-  >
+  <h2>
     Assets
   </h2>
   <p>

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { Grid, GridItem } from '@chakra-ui/react';
 import Header from './Header';
 import Nav from './Nav';
 import Footer from './Footer';
@@ -11,7 +10,25 @@ interface Properties {
 
 const Layout: React.FC<Properties> = ({ children }) => {
   return (
-    <Grid templateColumns="200px 1fr" templateRows="auto 1fr auto" gap="10px" height="100vh">
+    <>
+      <header>
+        <Header />
+      </header>
+      <div className="grid grid-flow-col auto-cols-max gap-4">
+        <nav className="py-2">
+          <Nav />
+        </nav>
+        <div className="prose py-2">{children}</div>
+      </div>
+      <footer>
+        <Footer />
+      </footer>
+    </>
+  );
+};
+
+/*
+<Grid templateColumns="200px 1fr" templateRows="auto 1fr auto" gap="10px" height="100vh">
       <GridItem as="header" gridArea="1 / 1 / 2 / 6">
         <Header />
       </GridItem>
@@ -20,7 +37,7 @@ const Layout: React.FC<Properties> = ({ children }) => {
         <Nav />
       </GridItem>
 
-      <GridItem as="main" gridArea="2 / 2 / 5 / 6">
+      <GridItem as="main" gridArea="2 / 2 / 5 / 6" className="prose">
         {children}
       </GridItem>
 
@@ -28,7 +45,6 @@ const Layout: React.FC<Properties> = ({ children }) => {
         <Footer />
       </GridItem>
     </Grid>
-  );
-};
+    */
 
 export default Layout;

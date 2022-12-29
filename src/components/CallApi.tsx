@@ -1,6 +1,6 @@
-import { Box, Button } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import fetch from '@/src/api/nextFetch';
+import Button from './Button';
 
 // An example of calling the backend api
 const CallApi: React.FC = () => {
@@ -17,13 +17,13 @@ const CallApi: React.FC = () => {
   };
 
   return (
-    <Box marginBottom="2rem">
+    <>
       <p data-testid="message">Api result: {apiMessage}</p>
-      <Button data-testid="loadApi" colorScheme={'blue'} onClick={() => callApi()}>
+      <Button data-testid="loadApi" onClick={() => callApi()}>
         Load data from api
       </Button>
       <span data-testid="error">{error}</span>
-    </Box>
+    </>
   );
 };
 

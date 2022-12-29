@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -14,11 +13,11 @@ const Page: NextPage = () => {
         <meta name="description" content="The site home page" />
       </Head>
 
-      <Heading as="h2">Homepage</Heading>
+      <h2>Homepage</h2>
 
       <p>I am some nice paragraph content</p>
 
-      <Heading as="h2">Assets</Heading>
+      <h2>Assets</h2>
 
       <p>Assets such as images can just be added to the /public directory</p>
 

@@ -10,7 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
-    "module": "CommonJS",
+    "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
@@ -22,7 +22,7 @@
       "@/pages/*": ["src/pages/*"],
       "@/components/*": ["src/components/*"],
       "@/src/*": ["src/*"],
-      "@/style/*": ["src/style/*"],
+      "@/styles/*": ["src/styles/*"],
       "@/__tests__/*": ["__tests__/*"]
     },
     "incremental": true

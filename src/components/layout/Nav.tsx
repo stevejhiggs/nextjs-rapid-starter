@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Box } from '@chakra-ui/react';
 
 interface NavElement {
   url: string;
@@ -52,14 +51,12 @@ const navUrls: NavElement[] = [
 
 function mapLinkCollection(links: NavElement[]) {
   return links.map((navElement) => (
-    <Box as="li" key={navElement.url} paddingBottom="0.5rem" paddingLeft="0.5rem">
-      <Link href={navElement.url} passHref>
-        {navElement.text}
-      </Link>
-    </Box>
+    <li key={navElement.url} className="pb-1 px-1">
+      <Link href={navElement.url}>{navElement.text}</Link>
+    </li>
   ));
 }
 
-const Nav: React.FC = () => <Box as="ul">{mapLinkCollection(navUrls)}</Box>;
+const Nav: React.FC = () => <ul>{mapLinkCollection(navUrls)}</ul>;
 
 export default Nav;

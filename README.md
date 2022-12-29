@@ -22,8 +22,7 @@ Contains a skeleton for rapidly standing up sites in a docker container running 
 
 - [styling](docs/styling.md)
 
-  - [Chakra ui](https://chakra-ui.com/)
-    tech theme built in
+  - [tailwind](https://https://tailwindcss.com//)
   - Built in support for cssmodules/sass/scss
 
 - devtools
@@ -136,7 +135,7 @@ The [docs](docs) folder contains more information about the project
 - [deploying](docs/deploying.md) - how to deploy to dev/qa/stage and production
 - [logging](docs/logging.md) - configuring log levels
 - [testing](docs/testing.md) - how to run tests
-- [styling](docs/styling.md) - styling using chakra ui + jss
+- [styling](docs/styling.md) - styling using tailwind
 - [api](docs/api.md) - Details about the api endpoints.
 - [linting](docs/linting.md) - When the linter runs.
 - [monitoring](docs/monitoring.md) - How to check the health of the system, where to look if something breaks

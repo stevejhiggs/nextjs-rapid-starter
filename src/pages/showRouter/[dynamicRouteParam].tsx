@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 import ShowRoute from '@/components/ShowRoute';
@@ -12,7 +11,7 @@ const Page: NextPage = () => {
         <meta name="description" content="Shows how to interact with the router" />
       </Head>
 
-      <Heading as="h2">Dynamic routing</Heading>
+      <h2>Dynamic routing</h2>
 
       <p>
         Pages and api endpoints both use next's <a href="https://nextjs.org/docs/routing/introduction">file based routing</a> feature and as such the
@@ -25,7 +24,7 @@ const Page: NextPage = () => {
         <strong>perch</strong> will be put in the query variable <strong>fishName</strong>.
       </p>
 
-      <Heading as="h3">Interacting with the router</Heading>
+      <h3>Interacting with the router</h3>
 
       <p>
         You can read route information from the <a href="https://nextjs.org/docs/api-reference/next/router">router</a>. This information includes:

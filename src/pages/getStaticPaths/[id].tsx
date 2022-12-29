@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
 import { GetStaticProps, GetStaticPaths, NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -26,7 +25,7 @@ const Page: NextPage<PageProperties> = ({ title, buildTime }) => {
         <meta name="description" content="dynamic page" />
       </Head>
 
-      <Heading as="h2">{title}</Heading>
+      <h2>{title}</h2>
       <p>I am a dynamically created page built at {buildTime}</p>
       <p>This is an example of a page that uses GetStaticPaths to generate multiple pages. Generated pages are:</p>
       <ul>{mapLinkCollection(pageMapping)}</ul>

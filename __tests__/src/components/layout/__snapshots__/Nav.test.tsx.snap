@@ -2,11 +2,9 @@
 
 exports[`Components -> Nav should match the snapshot 1`] = `
 <div>
-  <ul
-    class="css-0"
-  >
+  <ul>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/"
@@ -15,7 +13,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/about"
@@ -24,7 +22,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/customComponents"
@@ -33,7 +31,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/serverRendered"
@@ -42,7 +40,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/staticallyGenerated"
@@ -51,7 +49,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/showRouter/blahblahMadeUpValue"
@@ -60,7 +58,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/i18n/staticPage"
@@ -69,7 +67,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/i18n/serverRendered"
@@ -78,7 +76,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/getStaticPaths/blogArticleA"
@@ -87,7 +85,7 @@ exports[`Components -> Nav should match the snapshot 1`] = `
       </a>
     </li>
     <li
-      class="css-pmguu6"
+      class="py-y-0.5"
     >
       <a
         href="/getStaticPathsChildren/blog/articles/A"

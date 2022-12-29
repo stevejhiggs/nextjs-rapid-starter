@@ -1,5 +1,4 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
 import { GetStaticProps, NextPage } from 'next';
 import Head from 'next/head';
 import { useTranslation } from 'next-i18next';
@@ -16,7 +15,7 @@ const Page: NextPage = () => {
         <title>Localalised page</title>
         <meta name="description" content="a localised page" />
       </Head>
-      <Heading as="h2">{t('localePage:heading')} - Static</Heading>
+      <h2>{t('localePage:heading')} - Static</h2>
       <p>
         The heading above is done via translation. As the translations have to be injected into the page the page needs to implement either
         getServerSideProps or getStaticProps and have the translations passed in.
@@ -30,7 +29,7 @@ const Page: NextPage = () => {
         The locale system is pretty powerful and supports pretty much everything you would want from an i18n system. See{' '}
         <a href="https://github.com/isaachinman/next-i18next">here</a> for more details
       </p>
-      <Heading as="h3">Locale aware routing</Heading>
+      <h3>Locale aware routing</h3>
       <p>
         Routing can be aware of language either at the sub-path or domain level. E.g the link to the Polish version of this page is{' '}
         <Link href="./staticPage" locale="pl">

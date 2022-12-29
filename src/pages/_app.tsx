@@ -1,10 +1,10 @@
 import React from 'react';
 import Head from 'next/head';
-import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
-import theme from '@/style/theme';
 import CustomLayout from '@/components/layout/Layout';
+
+import '../styles/globals.css';
 
 // This file wraps every page
 function MyApp(properties: AppProps): JSX.Element {
@@ -23,11 +23,9 @@ function MyApp(properties: AppProps): JSX.Element {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <ChakraProvider resetCSS theme={theme}>
-        <CustomLayout>
-          <Component {...pageProps} />
-        </CustomLayout>
-      </ChakraProvider>
+      <CustomLayout>
+        <Component {...pageProps} />
+      </CustomLayout>
     </>
   );
 }
