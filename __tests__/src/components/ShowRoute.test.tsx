@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, render, screen } from '@testing-library/react';
-import ShowRoute from '@/src/ShowRoute';
+import ShowRoute from '@/components/ShowRoute';
 import mockUseRouter from '@/__tests__/mockUseRouter';
 
 afterEach(() => {

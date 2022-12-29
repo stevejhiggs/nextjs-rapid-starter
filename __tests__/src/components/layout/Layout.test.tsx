@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import Layout from '@/src/layout/Layout';
+import Layout from '@/components/layout/Layout';
 
 afterEach(cleanup);
 

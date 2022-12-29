@@ -18,8 +18,11 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"],
+      "@/pages/*": ["src/pages/*"],
+      "@/components/*": ["src/components/*"],
       "@/src/*": ["src/*"],
+      "@/style/*": ["src/style/*"],
       "@/__tests__/*": ["__tests__/*"]
     },
     "incremental": true

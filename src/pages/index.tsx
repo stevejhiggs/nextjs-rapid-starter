@@ -4,7 +4,7 @@ import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
 
-import SpiderImage from '../public/images/Peacock_Spider.jpg';
+import SpiderImage from '@/public/images/Peacock_Spider.jpg';
 
 const Page: NextPage = () => {
   return (

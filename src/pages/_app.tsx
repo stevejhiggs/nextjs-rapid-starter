@@ -3,8 +3,8 @@ import Head from 'next/head';
 import { ChakraProvider } from '@chakra-ui/react';
 import { AppProps } from 'next/app';
 import { appWithTranslation } from 'next-i18next';
-import theme from '@/src/style/theme';
-import CustomLayout from '@/src/layout/Layout';
+import theme from '@/style/theme';
+import CustomLayout from '@/components/layout/Layout';
 
 // This file wraps every page
 function MyApp(properties: AppProps): JSX.Element {

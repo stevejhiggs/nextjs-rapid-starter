@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import ShowRoute from '@/src/ShowRoute';
+import ShowRoute from '@/components/ShowRoute';
 
 const Page: NextPage = () => {
   return (

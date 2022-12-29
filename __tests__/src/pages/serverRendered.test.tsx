@@ -1,8 +1,8 @@
 import React from 'react';
 import { cleanup, render, screen, within } from '@testing-library/react';
 import Page, { getServerSideProps, PageProperties } from '@/pages/serverRendered';
-import { assertHasProps } from '../assertions';
-import { gsspContext } from '../context';
+import { assertHasProps } from '../../assertions';
+import { gsspContext } from '../../context';
 
 afterEach(cleanup);
 

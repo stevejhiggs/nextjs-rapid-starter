@@ -1,12 +1,12 @@
 import React from 'react';
 import { cleanup, render } from '@testing-library/react';
-import Nav from '@/src/layout/Nav';
+import Footer from '@/components/layout/Footer';
 
 afterEach(cleanup);
 
-describe('Components -> Nav', () => {
+describe('Components -> Footer', () => {
   it('should match the snapshot', () => {
-    const { container } = render(<Nav />);
+    const { container } = render(<Footer />);
     expect(container).toMatchSnapshot();
   });
 });

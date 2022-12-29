@@ -2,8 +2,8 @@ import React from 'react';
 import { Heading } from '@chakra-ui/react';
 import { NextPage } from 'next';
 import Head from 'next/head';
-import Counter from '@/src/Counter';
-import CallApi from '@/src/CallApi';
+import Counter from '@/components/Counter';
+import CallApi from '@/components/CallApi';
 
 const Page: NextPage = () => {
   return (

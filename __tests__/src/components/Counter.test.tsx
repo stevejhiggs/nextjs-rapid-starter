@@ -1,6 +1,6 @@
 import React from 'react';
 import { cleanup, render, fireEvent, screen } from '@testing-library/react';
-import Counter from '@/src/Counter';
+import Counter from '@/components/Counter';
 
 afterEach(cleanup);
 

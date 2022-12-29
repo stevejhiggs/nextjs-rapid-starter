@@ -2,7 +2,7 @@ import React from 'react';
 import { cleanup, render, fireEvent, waitFor, screen } from '@testing-library/react';
 import { rest } from 'msw';
 import { setupServer } from 'msw/node';
-import CallApi from '@/src/CallApi';
+import CallApi from '@/components/CallApi';
 
 // We are testing a component that makes network calls so we need to be able to mock/control those.
 // Rather than getting ourselves in a mess mocking the networking library we are going to use a service worker
