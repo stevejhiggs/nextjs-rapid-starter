@@ -7,7 +7,7 @@ exports[`Components -> Layout should match the snapshot 1`] = `
       class="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blue-500 mb-3"
     >
       <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+        class="px-4 w-full mx-auto flex flex-wrap items-center justify-between"
       >
         <div
           class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
@@ -56,9 +56,21 @@ exports[`Components -> Layout should match the snapshot 1`] = `
                 class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 href="#pablo"
               >
-                <i
-                  class="fab fa-facebook-square text-lg leading-lg text-white opacity-75"
-                />
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.217 10.907a2.25 2.25 0 100 2.186m0-2.186c.18.324.283.696.283 1.093s-.103.77-.283 1.093m0-2.186l9.566-5.314m-9.566 7.5l9.566 5.314m0 0a2.25 2.25 0 103.935 2.186 2.25 2.25 0 00-3.935-2.186zm0-12.814a2.25 2.25 0 103.933-2.185 2.25 2.25 0 00-3.933 2.185z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
                 <span
                   class="ml-2"
                 >
@@ -73,9 +85,26 @@ exports[`Components -> Layout should match the snapshot 1`] = `
                 class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 href="#pablo"
               >
-                <i
-                  class="fab fa-twitter text-lg leading-lg text-white opacity-75"
-                />
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
                 <span
                   class="ml-2"
                 >
@@ -90,9 +119,26 @@ exports[`Components -> Layout should match the snapshot 1`] = `
                 class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 href="#pablo"
               >
-                <i
-                  class="fab fa-pinterest text-lg leading-lg text-white opacity-75"
-                />
+                <svg
+                  aria-hidden="true"
+                  class="h-6 w-6 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
                 <span
                   class="ml-2"
                 >
