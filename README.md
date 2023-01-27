@@ -79,8 +79,8 @@ Contains a skeleton for rapidly standing up sites in a docker container running 
 
 ### Requirements
 
-- [Node.js 16.x or higher](https://nodejs.org/en/)
-- [Yarn](https://yarnpkg.com/en/)
+- [Node.js 18.x or higher](https://nodejs.org/en/)
+- [Pnpm](https://pnpm.io/)
 
 ### Recommended tools
 
@@ -98,23 +98,23 @@ Contains a skeleton for rapidly standing up sites in a docker container running 
 
 You can then run the app by:
 
-- running `yarn` to install the packages
-- running `yarn start` to start the app in local development mode
+- running `pnpm install` to install the packages
+- running `pnpm start` to start the app in local development mode
 - visiting http://localhost:3000
 
 ## Available commands
 
-- `yarn start` - start the app running locally in dev mode
-- `yarn test` - run the tests
-- `yarn test:watch` - run the tests in watch mode
-- `yarn test:ci` - run the tests for ci/cd + generate a coverage report
-- `yarn lint` - lint the codebase, applying fixes where possible
-- `yarn lint:ci` - lint the codebase, erroring out if code does not meet requirements
-- `yarn analyze` - show what takes up the space in the bundle
-- `yarn security:licenses` - show what licenses are in use, failing on GPL
-- `yarn security:packages` - show any security issues with packages, failing on critical issues
-- `yarn build` - build the app ready for production
-- `yarn start:production` - run the built package
+- `pnpm start` - start the app running locally in dev mode
+- `pnpm test` - run the tests
+- `pnpm test:watch` - run the tests in watch mode
+- `pnpm test:ci` - run the tests for ci/cd + generate a coverage report
+- `pnpm lint` - lint the codebase, applying fixes where possible
+- `pnpm lint:ci` - lint the codebase, erroring out if code does not meet requirements
+- `pnpm analyze` - show what takes up the space in the bundle
+- `pnpm security:licenses` - show what licenses are in use, failing on GPL
+- `pnpm security:packages` - show any security issues with packages, failing on critical issues
+- `pnpm build` - build the app ready for production
+- `pnpm start:production` - run the built package
 
 ## How do I get started making changes?
 
