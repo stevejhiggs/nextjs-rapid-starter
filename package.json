@@ -23,6 +23,7 @@
   "dependencies": {
     "@heroicons/react": "^2.0.14",
     "@next/bundle-analyzer": "^13.1.6",
+    "daisyui": "^2.50.0",
     "i18next": "^22.4.9",
     "isomorphic-unfetch": "^4.0.2",
     "next": "13.1.6",

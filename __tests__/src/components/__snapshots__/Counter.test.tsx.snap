@@ -10,7 +10,7 @@ exports[`Components -> Counter should match the snapshot 1`] = `
      times
   </p>
   <button
-    class="btn default md"
+    class="btn btn-primary btn-md"
     data-testid="increment"
   >
     Increment counter
